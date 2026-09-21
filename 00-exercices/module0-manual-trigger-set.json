@@ -1,0 +1,66 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "67c5841c-094f-4b1b-93a1-382625b0681d",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5c7dbbb7-5237-41c6-8341-097b21a2ea57",
+              "name": "message",
+              "value": "Mon premier workflow",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "80ff2940-96b2-43e2-b454-f3425d1f5998",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "57810d04-2400-46ca-a1f1-e5b24e4a8b51",
+  "meta": {
+    "instanceId": "5c49dd222c9cefba1ee2437b1b1053a6763f337a4831d0ce012c03d8ba7bdde5"
+  },
+  "nodeGroups": [],
+  "id": "Vynkm8cnTyEfeFa1",
+  "tags": []
+}
